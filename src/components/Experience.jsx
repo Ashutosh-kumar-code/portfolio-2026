@@ -44,7 +44,7 @@ const experiences = [
     ],
   },
   {
-    role: 'MERN Stack Developer',
+    role: 'MERN Stack Developer Intern',
     company: 'Infograins Software Solutions Pvt. Ltd.',
     period: '08/2022 – 03/2023',
     location: 'Indore',
@@ -82,14 +82,16 @@ export default function Experience() {
               style={{ display: 'flex', gap: '2rem', marginBottom: '2.5rem', paddingLeft: '0' }}
             >
               {/* Dot */}
-              <div style={{ flexShrink: 0, position: 'relative', zIndex: 1 }}>
+              <div style={{ flexShrink: 0, position: 'relative', zIndex: 2 }}>
                 <motion.div
                   whileHover={{ scale: 1.2 }}
                   style={{
                     width: '50px', height: '50px', borderRadius: '50%',
-                    background: `${exp.color}20`, border: `2px solid ${exp.color}`,
+                    background: 'var(--bg)',
+                    border: `2px solid ${exp.color}`,
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     color: exp.color, fontSize: '1.1rem',
+                    boxShadow: `0 0 0 4px var(--bg)`,
                   }}
                 >
                   <FiBriefcase />

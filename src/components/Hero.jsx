@@ -373,12 +373,12 @@ export default function Hero() {
                   pointerEvents: 'none',
                 }} />
                 {/* Name tag at bottom of photo */}
-                <div style={{
+                {/* <div style={{
                   position: 'absolute', bottom: '1.2rem', left: '1.2rem', right: '1.2rem',
                 }}>
                   <div style={{ color: '#fff', fontWeight: 700, fontSize: '1rem', lineHeight: 1.2 }}>Ashutosh Kumar</div>
                   <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.75rem', marginTop: '2px' }}>Full Stack Developer · Indore, India</div>
-                </div>
+                </div> */}
               </div>
 
               {/* Floating stat card — top right */}
