@@ -27,9 +27,10 @@ export default function Navbar() {
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
         padding: '1rem 2rem',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        background: scrolled ? 'rgba(10,10,15,0.92)' : 'transparent',
+        background: scrolled ? 'rgba(255,255,255,0.92)' : 'transparent',
         backdropFilter: scrolled ? 'blur(20px)' : 'none',
         borderBottom: scrolled ? '1px solid var(--border)' : 'none',
+        boxShadow: scrolled ? '0 2px 20px rgba(0,0,0,0.06)' : 'none',
         transition: 'all 0.3s ease',
       }}
     >
@@ -100,7 +101,7 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             style={{
               position: 'absolute', top: '100%', left: 0, right: 0,
-              background: 'rgba(10,10,15,0.97)', backdropFilter: 'blur(20px)',
+              background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(20px)',
               borderBottom: '1px solid var(--border)', padding: '1.5rem 2rem',
               display: 'flex', flexDirection: 'column', gap: '1rem',
             }}

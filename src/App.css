@@ -1,2 +1,31 @@
 /* Reset default vite styles */
 #root { min-height: 100vh; }
+
+/* Restore normal blue arrow cursor everywhere */
+*, *::before, *::after {
+  cursor: default !important;
+}
+
+a, button, [role="button"], [onClick] {
+  cursor: pointer !important;
+}
+
+input, textarea, select {
+  cursor: text !important;
+}
+
+/* Input fields */
+input, textarea {
+  background: var(--card) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--muted);
+}
+
+/* Card shadows for light theme */
+.game-card {
+  box-shadow: 0 2px 16px rgba(37,99,235,0.06);
+}
