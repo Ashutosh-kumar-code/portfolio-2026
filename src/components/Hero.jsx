@@ -369,7 +369,9 @@ export default function Hero() {
                 }}>
                 View Projects <FiArrowRight />
               </motion.button>
-              <motion.a href="#"
+              <motion.a
+                href="/Ashutosh_Kumar_Resume.pdf"
+                download="Ashutosh_Kumar_Resume.pdf"
                 whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}
                 style={{
                   padding: '0.85rem 2rem', borderRadius: '10px',
