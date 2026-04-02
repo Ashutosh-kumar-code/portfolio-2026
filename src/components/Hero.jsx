@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiDownload, FiArrowRight, FiCode, FiLayers, FiServer } from 'react-icons/fi';
 import { useEffect, useRef, useState } from 'react';
 
-const roles = ['MERN Stack Developer', 'React.js Specialist', 'Next.js Engineer', 'Full Stack Developer'];
+const roles = ['MERN Stack Developer', 'React.js Specialist', 'Full Stack Developer','Next.js Engineer'];
 
 // ── Typewriter ───────────────────────────────────────────────────────────────
 function TypeWriter() {
@@ -161,6 +161,81 @@ function StatCard({ icon: Icon, value, label, color, delay, style }) {
         <div style={{ fontSize: '0.68rem', color: 'var(--muted)', fontWeight: 500, marginTop: '1px' }}>{label}</div>
       </div>
     </motion.div>
+  );
+}
+
+// ── Avatar with loading placeholder ─────────────────────────────────────────
+function AvatarImage() {
+  const [loaded, setLoaded] = useState(false);
+  const [error, setError] = useState(false);
+
+  return (
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      {/* Placeholder — shown until image loads */}
+      {!loaded && !error && (
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(135deg, #e8eef8 0%, #dde5f5 50%, #e8eef8 100%)',
+          backgroundSize: '200% 200%',
+          animation: 'shimmer 1.8s ease-in-out infinite',
+          display: 'flex', flexDirection: 'column',
+          alignItems: 'center', justifyContent: 'center', gap: '1rem',
+        }}>
+          {/* Avatar silhouette */}
+          <div style={{
+            width: '90px', height: '90px', borderRadius: '50%',
+            background: 'linear-gradient(135deg, #c8d6f0, #b8c8e8)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+          }}>
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="8" r="4" fill="#94a3b8" />
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" fill="#94a3b8" />
+            </svg>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ width: '120px', height: '12px', borderRadius: '6px', background: '#c8d6f0', marginBottom: '8px' }} />
+            <div style={{ width: '80px', height: '10px', borderRadius: '6px', background: '#dde5f5', margin: '0 auto' }} />
+          </div>
+        </div>
+      )}
+
+      {/* Error fallback */}
+      {error && (
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(135deg, #e8eef8, #dde5f5)',
+          display: 'flex', flexDirection: 'column',
+          alignItems: 'center', justifyContent: 'center', gap: '0.8rem',
+        }}>
+          <div style={{
+            width: '90px', height: '90px', borderRadius: '50%',
+            background: 'linear-gradient(135deg, var(--accent), var(--accent2))',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            fontSize: '2.5rem', color: '#fff', fontWeight: 800,
+            boxShadow: '0 8px 24px rgba(37,99,235,0.3)',
+          }}>AK</div>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ fontWeight: 700, color: 'var(--text)', fontSize: '0.95rem' }}>Ashutosh Kumar</div>
+            <div style={{ color: 'var(--muted)', fontSize: '0.75rem' }}>Full Stack Developer</div>
+          </div>
+        </div>
+      )}
+
+      {/* Actual image */}
+      <img
+        src="/mypic.png"
+        alt="Ashutosh Kumar"
+        onLoad={() => setLoaded(true)}
+        onError={() => setError(true)}
+        style={{
+          width: '100%', height: '100%',
+          objectFit: 'cover', objectPosition: 'center top',
+          display: 'block',
+          opacity: loaded ? 1 : 0,
+          transition: 'opacity 0.4s ease',
+        }}
+      />
+    </div>
   );
 }
 
@@ -361,11 +436,7 @@ export default function Hero() {
                 boxShadow: '0 20px 60px rgba(37,99,235,0.15), 0 4px 20px rgba(0,0,0,0.1)',
                 border: '1px solid rgba(37,99,235,0.12)',
               }}>
-                <img
-                  src="/mypic.png"
-                  alt="Ashutosh Kumar"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                />
+                <AvatarImage />
                 {/* Gradient overlay at bottom */}
                 <div style={{
                   position: 'absolute', bottom: 0, left: 0, right: 0, height: '40%',
@@ -439,6 +510,10 @@ export default function Hero() {
 
       <style>{`
         @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+        @keyframes shimmer {
+          0% { background-position: 200% 0; }
+          100% { background-position: -200% 0; }
+        }
         @media (max-width: 900px) {
           .hero-grid { grid-template-columns: 1fr !important; }
           .hero-avatar-wrap { display: none !important; }

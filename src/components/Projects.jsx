@@ -15,15 +15,15 @@ const IMG6 = '/portfolio-a1.png';
 const projects = [
   {
     title: 'WhyConsult – AI-Powered Business Consulting Platform',
-    desc: 'WhyConsult is an AI-powered consulting platform that turns business data and surveys into actionable insights, automated reports, and strategic scorecards to help firms improve efficiency and decision-making.',
-   tags: ['Next.js frontend backend both', 'Clerk Authentication', 'Supabase'],
+    desc: 'An AI-powered consulting platform that transforms business data and surveys into actionable insights, automated reports, and strategic scorecards — helping firms improve efficiency and decision-making.',
+    tags: ['Next.js frontend backend both', 'Clerk Authentication', 'Supabase'],
     category: 'Next.js', color: '#7c3aed',
     live: 'https://lms.infosparkles.com/',
     image: IMG4,
   },
   {
     title: 'Video LMS',
-    desc: 'A full-featured Learning Management System with video content delivery, course management, and student progress tracking.',
+    desc: 'A video-based Learning Management System with course creation, student enrollment, progress tracking, and secure video streaming.',
     tags: ['React.js','Redux'],
     category: 'React.js', color: '#7c3aed',
     live: 'https://lms.infosparkles.com/',
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: 'DesertGate',
-    desc: 'A scalable web platform with responsive UI, seamless API integration, and optimized database queries for high performance.',
+    desc: 'A high-performance web platform with dynamic UI, optimized API integration, and efficient database queries built for scale.',
     tags: ['React.js', 'Redux'],
     category: 'React.js', color: '#2563eb',
     live: 'https://desert2.infosparkles.com/',
@@ -39,15 +39,15 @@ const projects = [
   },
     {
     title: 'Portfolio Analyzer',
-    desc: 'A dynamic web apPIs.',
+    desc: 'A full-stack portfolio analysis tool that evaluates investment data, visualizes performance metrics, and provides actionable insights through interactive charts.',
     tags: ['React.js', 'Node.js', 'Express', 'Mongodb'],
     category: 'Full Stack', color: '#f43f5e',
-    live: 'https://e-powerweb.netlify.app/',
+    live: 'https://portfolio-analyzer-lilac.vercel.app/',
     image: IMG6,
   },
   {
     title: 'Grocery Shop',
-    desc: 'An online grocery shopping app with product listings, cart management, and a smooth checkout experience.',
+    desc: 'An online grocery store with product browsing, cart management, and a smooth responsive checkout experience.',
     tags: ['HTML', 'JQuery'],
     category: 'Full Stack', color: '#10b981',
     live: 'https://grocery-onlineshop.netlify.app/',

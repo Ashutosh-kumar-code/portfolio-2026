@@ -12,9 +12,9 @@ const experiences = [
     type: 'Full-time',
     color: '#7c3aed',
     points: [
-      'Working as a Software Developer handling full-stack development tasks',
-      'Building and maintaining scalable web applications using modern tech stacks',
-      'Collaborating with cross-functional teams to deliver high-quality software solutions',
+      'Built scalable applications using microservices architecture and Turborepo monorepo setup',
+      'Developed responsive React.js UIs and integrated Node.js backend services with MQTT-based IoT device communication',
+      'Optimized application performance and mentored 2 junior interns on best practices',
     ],
   },
   {
@@ -26,8 +26,8 @@ const experiences = [
     color: '#06b6d4',
     points: [
       'Worked as a full-stack developer handling both frontend and backend development using Next.js',
-      'Built scalable and responsive UI components in React.js, implementing state management with Redux',
-      'Integrated third-party APIs and optimized application performance across the stack',
+      'Built scalable and responsive UI components in React.js with Redux state management',
+      'Integrated third-party APIs and optimized overall application performance across the stack',
     ],
   },
   {
@@ -40,11 +40,11 @@ const experiences = [
     points: [
       'Developed full-stack web applications focused on performance and scalability',
       'Designed responsive, animated UIs with seamless API integration',
-      'Built custom RESTful APIs and optimized database queries for better performance',
+      'Built custom RESTful APIs and optimized MongoDB database queries for better performance',
     ],
   },
   {
-    role: 'MERN Stack Developer Intern',
+    role: 'MERN Stack Developer',
     company: 'Infograins Software Solutions Pvt. Ltd.',
     period: '08/2022 – 03/2023',
     location: 'Indore',
@@ -53,7 +53,7 @@ const experiences = [
     points: [
       'Developed and maintained web applications using the MERN stack',
       'Collaborated with the team to build responsive and user-friendly interfaces',
-      'Worked on API development and database management with MongoDB',
+      'Worked on REST API development and database management with MongoDB',
     ],
   },
 ];

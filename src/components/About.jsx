@@ -50,18 +50,19 @@ export default function About() {
                 background: 'linear-gradient(90deg, var(--accent), var(--accent2))',
               }} />
               <p style={{ color: 'var(--muted)', lineHeight: 1.9, marginBottom: '1.2rem' }}>
-                I'm a passionate <span style={{ color: 'var(--accent2)', fontWeight: 600 }}>MERN Stack Developer</span> with
-                3+ years of hands-on experience building modern web applications. I specialize in
-                React.js, Next.js, Node.js, and cloud services like AWS.
+                I'm a <span style={{ color: 'var(--accent2)', fontWeight: 600 }}>MERN Stack Developer</span> with
+                3+ years of experience building production-grade web applications from scratch.
+                I work across the full stack — React.js, Next.js on the frontend and
+                Node.js, Express, NestJS on the backend, with MongoDB and PostgreSQL for data.
               </p>
               <p style={{ color: 'var(--muted)', lineHeight: 1.9, marginBottom: '1.2rem' }}>
-                I love turning complex problems into elegant, performant solutions. Whether it's
-                crafting pixel-perfect animated UIs or designing robust RESTful APIs, I bring the same
-                level of care and attention to every layer of the stack.
+                I've built everything from LMS platforms and e-commerce apps to AI-powered consulting
+                tools and IoT-integrated dashboards. I care deeply about clean architecture, smooth UX,
+                and writing code that's easy to maintain and scale.
               </p>
               <p style={{ color: 'var(--muted)', lineHeight: 1.9 }}>
-                I'm eager to continuously upgrade my knowledge and skills and apply them for the
-                growth and success of both the organization and myself.
+                Currently working at RightByte Technologies, I'm always looking to take on challenging
+                problems and grow alongside teams that value quality and innovation.
               </p>
 
               <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap' }}>
