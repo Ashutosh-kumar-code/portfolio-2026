@@ -44,7 +44,7 @@ const experiences = [
     ],
   },
   {
-    role: 'MERN Stack Developer',
+    role: 'MERN Stack Developer Intern',
     company: 'Infograins Software Solutions Pvt. Ltd.',
     period: '08/2022 – 03/2023',
     location: 'Indore',

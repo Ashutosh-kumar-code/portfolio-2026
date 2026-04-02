@@ -106,15 +106,14 @@ function ProjectCard({ p, index, inView }) {
           transition: 'opacity 0.3s',
         }} />
 
-        {/* Category badge */}
-        <span style={{
+        {/* <span style={{
           position: 'absolute', top: '12px', left: '12px',
           padding: '0.22rem 0.7rem', borderRadius: '100px',
           background: `${p.color}ee`, color: '#fff',
           fontSize: '0.68rem', fontWeight: 700,
           backdropFilter: 'blur(6px)',
           boxShadow: `0 2px 8px ${p.color}40`,
-        }}>{p.category}</span>
+        }}>{p.category}</span> */}
       </div>
 
       {/* Info */}

@@ -20,8 +20,8 @@ function Counter({ to, suffix = '', duration = 1.5, inView }) {
 
 const stats = [
   { num: 3,   suffix: '+',  label: 'Years Experience' },
-  { num: 5,   suffix: '+',  label: 'Projects Delivered' },
-  { num: 4,   suffix: '',   label: 'Companies Worked' },
+  { num: 10,   suffix: '+',  label: 'Projects Delivered' },
+  { num: 3,   suffix: '',   label: 'Companies Worked' },
   { num: 100, suffix: '%',  label: 'Commitment to Quality' },
 ];
 
